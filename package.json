@@ -1,0 +1,15 @@
+{
+  "name": "collinson-assessment",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w @repo/backend",
+    "dev:frontend": "npm run dev -w @repo/frontend",
+    "build": "npm run build -w @repo/shared && npm run build -w @repo/backend && npm run build -w @repo/frontend",
+    "build:shared": "npm run build -w @repo/shared",
+    "build:backend": "npm run build -w @repo/backend",
+    "build:frontend": "npm run build -w @repo/frontend"
+  }
+}
